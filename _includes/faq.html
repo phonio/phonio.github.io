@@ -6,126 +6,20 @@
   <div class="container">
     <div id="questions">
       <h1>Basic Service (Free)</h1>
-
-      <div class="question">
-        <h2>What is Phonio?</h2>
-        <p>Phonio is a free service that enables influencers (musicians, athletes, artists, thought-leaders, consumer brands and more) to instantly make one-way phone calls to their audiences. &nbsp;Please note that standard message and data rates from your carrier may apply.</p>
-      </div>
-
-      <div class="question">
-        <h2>How do I sign up to receive calls from an influencer?</h2>
-        <p>To sign up, just call an influencer's unique Phonio number. &nbsp;Influencers will share their Phonio number on platforms like Twitter, Facebook and Instagram.</p>
-      </div>
-
-      <div class="question">
-        <h2>How is this different from other social media services?</h2>
-        <p>Phonio allows audiences to gain access to unique content that is not publicly available and form a deeper connection with an influencer. Phonio is not an app &ndash; there's nothing to download.</p>
-      </div>
-
-      <div class="question">
-        <h2>What will the calls be about?</h2>
-        <p>The content of a call is up to the influencer and will vary. For example, a band may use Phonio to:</p>
-        <ul>
-          <li>Play songs (warming-up before a show, demoing a new song, broadcasting songs while on tour)</li>
-          <li>Tell funny stories ("remember that time in the hotel room...?!?")</li>
-          <li>Give updates from the road</li>
-          <li>Make announcements about special offers (new album, concerts)</li>
-        </ul>
-      </div>
-
-      <div class="question">
-        <h2>When can I expect my first call from an influencer?</h2>
-        <p>Audiences typically receive their first call from an influencer within 1 week of joining.</p>
-      </div>
-
-      <div class="question">
-        <h2>How often will an influencer call me?</h2>
-        <p>Phonio asks that influencers make a minimum of 1 call per month to their audiences. The actual number of calls you receive may vary significantly from month-to-month.</p>
-      </div>
-
-      <div class="question">
-        <h2>At what time will I receive calls?</h2>
-        <p>The Phonio service enables an influencer to call their fans whenever they choose. You may receive calls at any time.</p>
-      </div>
-
-      <div class="question">
-        <h2>How long do the calls last?</h2>
-        <p>Calls typically average from 1-2 minutes, but the length of calls may vary significantly.</p>
-      </div>
-
-      <div class="question">
-        <h2>What happens if I call an influencer's number?</h2>
-        <p>If you call an influencer's phone you will receive either a pre-recorded greeting, a busy signal or an automated message from Phonio.</p>
-      </div>
-
-      <div class="question">
-        <h2>Can I receive calls from multiple influencers?</h2>
-        <p>Yes, you can sign up for calls from as many influencers as you like.</p>
-      </div>
-
-      <div class="question">
-        <h2>If I'm following multiple influencers, how do I know which one is calling me?</h2>
-        <p>Each influencer has a unique phone number. Simply store the number in your contacts to know which influencer is calling.</p>
-      </div>
-
-      <div class="question">
-        <h2>How do I know the calls are coming from the influencer and are not a hoax?</h2>
-        <p>Phonio requires influencers to authenticate themselves prior to letting them join our service.</p>
-      </div>
-
-      <div class="question">
-        <h2>Does the service work internationally?</h2>
-        <p>The basic service only works in the US. Phonio's premium service is currently available in 49 countries: Argentina, Australia, Austria, Belgium, Brazil, Canada, Chile, China, Costa Rica, Croatia, Cyprus, Denmark, Estonia, France, Germany. Greece, Hong Kong, Hungary, Iceland, India, Ireland, Israel, Italy, Japan, Luxembourg, Malaysia, Martinique, Mexico, Netherlands, New Zealand, Norway, Peru, Poland, Portugal, Puerto Rico, Romania, Russia, Singapore, Slovakia, South, Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, United Kingdom, United States, Venezuela.</p>
-      </div>
-
-      <div class="question">
-        <h2>Who runs Phonio?</h2>
-        <p>The Phonio service is run by Phonio, Inc., a San Francisco, CA based technology company.</p>
-      </div>
+      {% for questions in site.data.basic_service_faq %}
+        <div class="question">
+          <h2>{{ questions.question }}</h2>
+          <p>{{ questions.answer }}</p>
+        </div>
+      {% endfor %}
 
       <h1>Premium Service (Subscription)</h1>
-
-      <div class="question">
-        <h2>What it the premium service?</h2>
-        <p>The premium service provides exclusive access to an influencer and provides you with the following benefits:</p>
-        <ul>
-          <li>Real-time calls</li>
-          <li>No advertising</li>
-          <li>Private call list (you will be included in the influencer's private 1-1 call list and have the chance to receive a private phone call. &nbsp;Phonio cannot guarantee that you will receive a private call.)</li>
-          <li>Exclusive content</li>
-          <li>Allows fans outside the US to receive calls</li>
-        </ul>
-      </div>
-
-      <div class="question">
-        <h2>How much does the premium service cost?</h2>
-        <p>The subscription fee is $5 per month for each influencer. For example, if you subscribe to 3 influencers, your monthly charge is $15. Subscriptions can be cancelled at any time. Your credit card will be charged monthly.</p>
-      </div>
-
-      <div class="question">
-        <h2>What if an influencer doesn't call?</h2>
-        <p>If the influencer does not make a call to their audience in a 4-week period, your subscription fee for that month ($5) will credited back to your Phonio account.</p>
-      </div>
-
-      <div class="question">
-        <h2>Are there any hidden fees?</h2>
-        <p>No - all Phonio will charge is the $5 per month subscription fee for each influencer. Standard data and voice charges from your phone carrier may apply.</p>
-      </div>
-
-      <div class="question">
-        <h2>How do I change my billing information, credit card, or phone number?</h2>
-        <p>Please email <a href="mailto:billing@phonio.com">billing@phonio.com</a> and we will assist you to update your information.</p>
-      </div>
-
-      <div class="question">
-        <h2>What is your cancellation policy?</h2>
-        <p>You can unsubscribe at any time and there are no cancellation fees. Simply email <a href="mailto:cancel@phonio.com">cancel@phonio.com</a> and we will assist you to cancel your subscription.</p>
-      </div>
-
-      <div class="question">
-        <h2>Do you share my information with anyone?</h2>
-        <p>We may share your information, whether public or private, with the individual, management, or business that corresponds with the Phonio influencer(s) for which you have subscribed. We will not share your information with any other company without your consent, other than for the express purpose of delivering the purchased service.</p>
-      </div>
+      {% for questions in site.data.premium_service_faq %}
+        <div class="question">
+          <h2>{{ questions.question }}</h2>
+          <p>{{ questions.answer }}</p>
+        </div>
+      {% endfor %}
 
       <h1>Other Questions</h1>
       <p>Have comments or questions? Drop us a line. (<a href="mailto:info@phonio.com">info@phonio.com</a>)</p>

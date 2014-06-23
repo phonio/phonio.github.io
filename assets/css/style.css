@@ -22,7 +22,8 @@ body { -webkit-font-smoothing: antialiased; } /* anti-aliased text */
 #lightbox iframe { width: 950px; height: 534px; }
 
 #header { height: 80px; background: #000; background: rgba(0,0,0,0.7); position: fixed; top: 0; width: 100%; z-index: 100; }
-#header #logo { margin-top: 11px; float: left; color: #fff; font-size: 48px; font-family: 'museo_slab900', serif; }
+#header #logo { margin-top: 11px; float: left; color: #fff; font-size: 48px; font-family: 'museo_slab900', serif;}
+#header #logo a { color: white; text-decoration: none; }
 #header #logo img { display: none; }
 #header #links { float: right; font-family: 'museo_slab900', serif; font-size: 22px; margin: 0; padding: 0; }
 #header #links li { float: left; list-style: none; }
@@ -43,8 +44,14 @@ body { -webkit-font-smoothing: antialiased; } /* anti-aliased text */
 .section h1 span { color: #f07522; }
 .section h2 { color: #5e605f; font-size: 20px; text-align: center; margin: 5px 0; font-weight: normal; }
 
-#content.section { padding: 85px 50px; }
-#content h1 { text-align: left; }
+#content.section { padding: 80px 0; }
+#content .title { position: relative; padding: 20px 0 10px 0; background: #f07522; cursor: pointer; }
+#content .title h1 { position: absolute; top: -25px; color: #ffffff; width: 130px; left: 50%; margin-left: -65px; background: #f07522; padding-top: 5px; }
+#content .title h1:before { content: ''; height: 0; width: 0; position: absolute; left: -30px; top: 0; border-top: 30px solid transparent; border-right: 30px solid #f07522; }
+#content .title h1:after { content: ''; height: 0; width: 0; position: absolute; right: -30px; top: 0; border-top: 30px solid transparent; border-left: 30px solid #f07522; }
+#content .title h2 { color: #ffffff; font-weight: normal; }
+#content h1 { text-align: left; color: #f07522; }
+#content h3, #content strong { color: #5e605f; font-size: 20px;}
 
 #service ul { list-style-image: url('/assets/images/bullet.jpg'); margin-top: 50px; padding: 20px; font-size: 20px; color: #5e605f; text-transform: uppercase; width: 1000px; margin-left: 200px; }
 #service ul li { float: left; width: 500px; padding: 10px 0; }

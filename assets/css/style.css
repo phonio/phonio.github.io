@@ -43,6 +43,9 @@ body { -webkit-font-smoothing: antialiased; } /* anti-aliased text */
 .section h1 span { color: #f07522; }
 .section h2 { color: #5e605f; font-size: 20px; text-align: center; margin: 5px 0; font-weight: normal; }
 
+#content.section { padding: 85px 50px; }
+#content h1 { text-align: left; }
+
 #service ul { list-style-image: url('/assets/images/bullet.jpg'); margin-top: 50px; padding: 20px; font-size: 20px; color: #5e605f; text-transform: uppercase; width: 1000px; margin-left: 200px; }
 #service ul li { float: left; width: 500px; padding: 10px 0; }
 

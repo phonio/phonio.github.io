@@ -1,46 +1,18 @@
 <div id="team" class="section">
   <div class="container">
     <h1>Te<span>a</span>m</h1>
-    <div class="team_member" id="matt">
-      <div class="title">
-        <img src="/assets/images/matt.png"/>
-        <h2>Matt Caspari</h2>
-        <h3>CEO</h3>
+    {% for member in site.data.team %}
+      <div class="team_member" id="{{ member.name | downcase | replace: ' ', '-' }}">
+        <div class="title">
+          <img src="/assets/images/{{ member.image }}">
+          <h2>{{ member.name }}</h2>
+          <h3>{{ member.title }}</h3>
+        </div>
+        <div class="description">
+          {{ member.bio }}
+        </div>
       </div>
-      <div class="description">
-        <p>Matt is an experienced entrepreneur and the CEO of Phonio, Inc.</p>
-        <p>In 2006, Matt co-founded Aurora Algae, Inc., an alternative energy company. As Chairman and CEO, he raised $25M in venture capital from investors including Oak Investment Partners, Gabriel Venture Partners and Noventi. During his seven-year tenure with the company, it grew to over 100 employees and raised in excess of $100M in financing.</p>
-        <p>Prior to Aurora Algae, Matt worked in Manhattan as a strategic management consultant for Cambridge, UK headquartered Cambridge Pharma Consultancy (acquired by IMS Health) and for Bloomberg, LP, where he worked in Mergers and Acquisitions.</p>
-        <p>Matt has been cited in publications including The Wall Street Journal, Fortune, and The Washington Post.</p>
-        <p>Matt holds an MBA with a Certificate in Entrepreneurship from the Haas School of Business, University of California Berkeley and a BS from Georgetown University.</p>
-      </div>
-    </div>
-    <div class="team_member" id="dan">
-      <div class="title">
-        <img src="/assets/images/dan.png"/>
-        <h2>Dan Soha</h2>
-        <h3>CMO</h3>
-      </div>
-      <div class="description">
-        <p>Dan is a recognized marketing guru, who has managed $100m+ in online spend, and the CMO of Phonio, Inc.</p>
-        <p>He is an active angel investor and a successful serial entrepreneur.</p>
-        <p>His professional experience includes working in the marketing departments of eHealth, FastFind, and QuinStreet.</p>
-        <p>Dan holds a BA in Computer Science, Algorithm Theory, from the University of California Berkeley.</p>
-      </div>
-    </div>
-    <div class="team_member" id="conrad">
-      <div class="title">
-        <img src="/assets/images/conrad.png"/>
-        <h2>Conrad Decker</h2>
-        <h3>CTO</h3>
-      </div>
-      <div class="description">
-        <p>Conrad is an experienced technologist and the CTO of Phonio, Inc.</p>
-        <p>Prior to Phonio, Conrad founded CDev Technologies, a web technology solutions provider focused on offering strategic and tactical support for organizations looking to leverage web technologies to improve the way they operate, communicate, and collaborate.</p>
-        <p>Conrad has over 10 years of experience architecting and building high traffic, scalable systems for Coca-Cola, eBay and other companies.</p>
-        <p>Conrad holds a BS in Computer and Informations Systems - Business from the University of North Florida. </p>
-      </div>
-    </div>
+    {% endfor %}
     <div class="clear"></div>
   </div>
 </div>

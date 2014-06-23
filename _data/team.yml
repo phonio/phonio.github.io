@@ -1,0 +1,27 @@
+- name: Matt Caspari
+  title: CEO
+  image: matt.png
+  bio:
+    <p>Matt is an experienced entrepreneur and the CEO of Phonio, Inc.</p>
+    <p>In 2006, Matt co-founded Aurora Algae, Inc., an alternative energy company. As Chairman and CEO, he raised $25M in venture capital from investors including Oak Investment Partners, Gabriel Venture Partners and Noventi. During his seven-year tenure with the company, it grew to over 100 employees and raised in excess of $100M in financing.</p>
+    <p>Prior to Aurora Algae, Matt worked in Manhattan as a strategic management consultant for Cambridge, UK headquartered Cambridge Pharma Consultancy (acquired by IMS Health) and for Bloomberg, LP, where he worked in Mergers and Acquisitions.</p>
+    <p>Matt has been cited in publications including The Wall Street Journal, Fortune, and The Washington Post.</p>
+    <p>Matt holds an MBA with a Certificate in Entrepreneurship from the Haas School of Business, University of California Berkeley and a BS from Georgetown University.</p>
+
+- name: Dan Soha
+  title: CMO
+  image: dan.png
+  bio:
+    <p>Dan is a recognized marketing guru, who has managed $100m+ in online spend, and the CMO of Phonio, Inc.</p>
+    <p>He is an active angel investor and a successful serial entrepreneur.</p>
+    <p>His professional experience includes working in the marketing departments of eHealth, FastFind, and QuinStreet.</p>
+    <p>Dan holds a BA in Computer Science, Algorithm Theory, from the University of California Berkeley.</p>
+
+- name: Conrad Decker
+  title: CTO
+  image: conrad.png
+  bio:
+    <p>Conrad is an experienced technologist and the CTO of Phonio, Inc.</p>
+    <p>Prior to Phonio, Conrad founded CDev Technologies, a web technology solutions provider focused on offering strategic and tactical support for organizations looking to leverage web technologies to improve the way they operate, communicate, and collaborate.</p>
+    <p>Conrad has over 10 years of experience architecting and building high traffic, scalable systems for Coca-Cola, eBay and other companies.</p>
+    <p>Conrad holds a BS in Computer and Informations Systems - Business from the University of North Florida. </p>

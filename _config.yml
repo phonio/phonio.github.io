@@ -1,0 +1,8 @@
+# Site settings
+title: Phonio
+url: "http://phon.io"
+gems:
+  - jekyll-redirect-from
+
+# Build settings
+permalink: pretty

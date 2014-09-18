@@ -19,7 +19,7 @@ $(document).ready(function () {
     }
   }
 
-  $('#links a.hash').click(function () {
+  $('#links a[data-hash]').click(function () {
     scrollToTarget($(this).data('hash'), false);
     return false;
   });
